@@ -9,6 +9,37 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: .85vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: .75vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: .8vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: .75vw;
+  }
 }
 
 .m-logo {
@@ -27,17 +58,17 @@ body {
 }
 
 .m-links__wrap {
-  padding-top: 8px;
+  margin-top: 4em;
   transform: scale(0);
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 0.25em;
+  gap: 0.5em;
 }
 
 .m-logo h1 {
   font-family: "Press start 2p", sans-serif;
-  font-size: 1.5em;
+  font-size: 6em;
   letter-spacing: -4px;
   font-weight: 400;
   margin: 0 0 0.25em;
@@ -49,7 +80,7 @@ body {
 
 .m-logo .subtitle {
   color: #ec008c;
-  font-size: 1.25rem;
+  font-size: 7em;
   margin: 0;
   font-family: "Mr Dafoe", serif;
   text-shadow: 0px 1x 0px #530031;
@@ -123,7 +154,6 @@ body {
 }
 
 .button {
-  margin-top: 1rem;
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -131,7 +161,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 4em;
 
   /* animate all changes*/
   transition: all 0.15s ease-in-out;
@@ -147,7 +177,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 18px;
+  font-size: 4.5em;
 
   /* add drop shadow*/
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
@@ -159,6 +189,7 @@ body {
 a,
 a:active,
 a:visited {
+  font-size: 4em;
   color: #fff;
   text-decoration: none;
 }
