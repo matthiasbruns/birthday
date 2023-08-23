@@ -2,6 +2,7 @@
 @import 'https://fonts.googleapis.com/css?family=Press+Start+2P';
 @import 'https://fonts.googleapis.com/css?family=Mr+Dafoe';
 @import 'https://fonts.googleapis.com/css?family=Changa+One';
+
 body {
   background: #000;
   background-image: linear-gradient(to bottom, #6A0275 10%, #040C4A 60%);
@@ -19,10 +20,21 @@ body {
   position: relative;
   z-index: 501;
 }
+
 .m-logo__wrap {
   transform: scale(0);
   text-align: center;
 }
+
+.m-links__wrap {
+  padding-top: 8px;
+  transform: scale(0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .m-logo h1 {
   font-family: "Press start 2p", sans-serif;
   font-size: 62px;
@@ -34,6 +46,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .m-logo .subtitle {
   color: #ec008c;
   font-size: 50px;
@@ -47,8 +60,9 @@ body {
   height: 100vh;
   min-height: 400px;
   overflow: hidden;
-  filter: blur(1px);
+  filter: blur(.5px);
 }
+
 .wrapper::after {
   content: "";
   position: absolute;
@@ -62,7 +76,7 @@ body {
   pointer-events: none;
 }
 
-.m-grid {
+.grid-wrapper {
   position: absolute;
   top: 50%;
   margin-top: -75vh;
@@ -70,21 +84,29 @@ body {
   margin-left: -100vw;
   width: 200vw;
   height: 150vh;
+  filter: blur(1px);
+}
+
+.m-grid {
+  width: 100%;
+  height: 100%;
   transform: scaleY(0);
   background-image: linear-gradient(0deg, transparent 24%, rgba(236, 0, 140, 0.5) 25%, rgba(236, 0, 140, 0.9) 26%, transparent 27%, transparent 74%, rgba(236, 0, 140, 0.5) 75%, rgba(236, 0, 140, 0.9) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(236, 0, 140, 0.75) 25%, rgba(236, 0, 140, 0.25) 26%, transparent 27%, transparent 74%, rgba(236, 0, 140, 0.75) 75%, rgba(236, 0, 140, 0.25) 76%, transparent 77%, transparent);
   background-size: 50px 50px;
 }
+
 .m-grid.is-animating {
   -webkit-animation: fly 1s linear;
-          animation: fly 1s linear;
+  animation: fly 1s linear;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes fly {
   0% {
     transform: perspective(300px) rotateX(80deg) translateY(0%);
   }
+
   100% {
     transform: perspective(300px) rotateX(80deg) translateY(50px);
   }
@@ -94,7 +116,55 @@ body {
   0% {
     transform: perspective(300px) rotateX(80deg) translateY(0%);
   }
+
   100% {
     transform: perspective(300px) rotateX(80deg) translateY(50px);
   }
+}
+
+.button {
+  margin-top: 8px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  /* animate all changes*/
+  transition: all 0.15s ease-in-out;
+}
+
+.button:hover {
+  background-color: #46a14a;
+  /* Green */
+  border: none;
+  cursor: pointer;
+  color: #f5f5f5;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+
+  /* add drop shadow*/
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+a,
+a:active,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f5f5f5;
+  cursor: pointer;
+  text-decoration: underline;
 }
