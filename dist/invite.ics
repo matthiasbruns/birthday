@@ -25,9 +25,9 @@ BEGIN:VEVENT
 TRANSP:OPAQUE
 DTEND;TZID=Europe/Berlin:20231021T030000
 LOCATION:Bowling 2000 GmbH\nIm Königsesch 7\, 46395 Bocholt\, Germany
-DTSTAMP:20230904T094822Z
+DTSTAMP:20230904T095225Z
 UID:291g479gmbgpe3oo8j1prdov3n@google.com
-DESCRIPTION:Ich feiere meinen 25. Geburtstag und lade dich hiermit herzl
+DESCRIPTION:Ich feiere meinen 35. Geburtstag und lade dich hiermit herzl
  ich ein\, mit mir zu feiern 🥳\n\nDer Plan für den Abend\n20:00 - 22:00:
   🎳 Bowling 🎳\nnach 22:00: 🍹 Party 🍻\n📍 Treffpunkt: Königsesch 7\, 4
  6395 Bocholt\n\nBitte gebe mir bis zum 10.10.2023 Bescheid\, ob du komms
@@ -37,7 +37,7 @@ SEQUENCE:0
 CLASS:PUBLIC
 SUMMARY:Matthias Bruns Birthday Bash 2023
 DTSTART;TZID=Europe/Berlin:20231020T200000
-LAST-MODIFIED:20230904T094819Z
+LAST-MODIFIED:20230904T095208Z
 CREATED:20230823T091808Z
 X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-MAPKIT-HANDLE=CAESqwIIrk0Q
  zIfFmdyY/8siGhIJmV4Hc2DqSUARGyycpPmDGkAidQoHR2VybWFueRICREUaFk5vcnRoIFJo
