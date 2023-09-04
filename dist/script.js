@@ -16,9 +16,9 @@ const anim2Props = {
 };
 
 
-
 tl.
   to(grid, 1, { scaleY: 1.5, ease: Power3.easeIn }).
   to(grid, 1, anim2Props, '+=0.3').
   to('.m-logo__wrap', 1, { scale: 1 }).
-  to('.m-links__wrap', 0.5, { scale: 1 });
+  to('.m-timetable__wrap', 0.35, { scale: 1 }).
+  to('.m-links__wrap', 0.35, { scale: 1 });
